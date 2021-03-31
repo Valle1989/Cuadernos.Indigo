@@ -21,6 +21,10 @@ public class CuadernoManagedBean implements Serializable {
     
     private String mensaje = "";
     
+    private String mensajeUpdate = "";
+    
+    private String mensajeRemove = "";
+    
     public void save(){
         cr.save(cuaderno);
         mensaje = "Se ha ingreaso el pedido con id: " + cuaderno.getId();
@@ -60,6 +64,22 @@ public class CuadernoManagedBean implements Serializable {
 
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
+    }
+
+    public String getMensajeUpdate() {
+        return mensajeUpdate;
+    }
+
+    public void setMensajeUpdate(String mensajeUpdate) {
+        this.mensajeUpdate = mensajeUpdate;
+    }
+
+    public String getMensajeRemove() {
+        return mensajeRemove;
+    }
+
+    public void setMensajeRemove(String mensajeRemove) {
+        this.mensajeRemove = mensajeRemove;
     }
     
     

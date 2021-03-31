@@ -5,26 +5,71 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Cuaderno Indigo</title>
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="css/estilo.css"/>
     </h:head>
     <h:body>
-        <h:outputLabel value="Realiza tu pedido"/>
-        
-        <h:form>
-            <h:panelGrid columns="2" >
-                <h:outputLabel value="Tapas: "/> 
-                <h:inputText value="#{cuadernoMB.cuaderno.tapas}"/>
-                <h:outputLabel value="Interiores: "/> 
-                <h:selectOneMenu value="#{cuadernoMB.cuaderno.interiores}">
-                    <f:selectItems value="#{cuadernoMB.interiores}" />
-                </h:selectOneMenu>
-                <h:outputLabel value="" />                
-                <h:commandButton value="Guardar" action="#{cuadernoMB.save()}"/>
-                <h:outputLabel value="" />
-                <h:outputLabel value="#{cuadernoMB.mensaje}"/>
-            </h:panelGrid>    
-        </h:form>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
 
+                    <h1>Hacé tu Pedido.</h1> <br/>
+                    <div class="formularios">
+                        <h:form>
+                            <h:panelGrid columns="2" >
+                                <h:outputLabel value="Tapas: "/> 
+                                <h:inputText value="#{cuadernoMB.cuaderno.tapas}"/>
+                                <h:outputLabel value="Interiores: "/> 
+                                <h:selectOneMenu value="#{cuadernoMB.cuaderno.interiores}">
+                                    <f:selectItems value="#{cuadernoMB.interiores}" />
+                                </h:selectOneMenu>
+                                <h:outputLabel value="" />
+                                <h:commandButton value="Guardar" action="#{cuadernoMB.save()}"/>
+                                <h:outputLabel value="" />
+                                <h:outputLabel value="#{cuadernoMB.mensaje}"/>
+                            </h:panelGrid>
+                        </h:form>
+                    </div>  
+                    <h1>Modificar Pedido</h1> <br/>
+                    <div>        
+                        <h:form> 
+                            <h:panelGrid columns="2" >
+                                <h:outputLabel value="Tapas: "/> 
+                                <h:inputText value="#{cuadernoMB.cuaderno.tapas}"/>
+                                <h:outputLabel value="Interiores: "/> 
+                                <h:selectOneMenu value="#{cuadernoMB.cuaderno.interiores}">
+                                    <f:selectItems value="#{cuadernoMB.interiores}" />
+                                </h:selectOneMenu>
+                                <h:outputLabel value="Id: "/> 
+                                <h:inputText value="#{cuadernoMB.cuaderno.id}"/>
+                                <h:outputLabel value="" />               
+                                <h:commandButton value="Modificar" action="#{cuadernoMB.update()}"/>
+                                <h:outputLabel value="" />
+                                <h:outputLabel value="#{cuadernoMB.mensajeUpdate}"/>
+                            </h:panelGrid>
+                        </h:form>
+                    </div>    
+                    <h1>Eliminar Pedido</h1> <br/>
+                    <div>        
+                        <h:form>
+                            <h:panelGrid columns="2" >
+                                <h:outputLabel value="Id: "/> 
+                                <h:inputText value="#{cuadernoMB.cuaderno.id}"/>
+                                <h:outputLabel value="Tapas: "/> 
+                                <h:inputText value="#{cuadernoMB.cuaderno.tapas}"/>
+                                <h:outputLabel value="Interiores: "/> 
+                                <h:selectOneMenu value="#{cuadernoMB.cuaderno.interiores}">
+                                    <f:selectItems value="#{cuadernoMB.interiores}" />
+                                </h:selectOneMenu>
+                                <h:outputLabel value="" />
+                                <h:commandButton value="Borrar" action="#{cuadernoMB.remove()}"/>
+                                <h:outputLabel value="" />
+                                <h:outputLabel value="#{cuadernoMB.mensajeRemove}"/>
+                            </h:panelGrid>    
+                        </h:form>
+                    </div>
+                </div>            
+            </div> 
+        </div>
     </h:body>
 </html>
 

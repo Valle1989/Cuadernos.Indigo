@@ -1,0 +1,10 @@
+ar\com\indigo\web\cuadernosindigo\repositories\rest\CuadernoRepository.class
+ar\com\indigo\web\cuadernosindigo\entities\Cuaderno.class
+ar\com\indigo\web\cuadernosindigo\interfaces\I_CuadernoRepository.class
+ar\com\indigo\web\cuadernosindigo\repositories\rest\CuadernoRepository$1.class
+ar\com\indigo\web\cuadernosindigo\enums\Interiores.class
+ar\com\indigo\web\cuadernosindigo\enums\TipoCliente.class
+ar\com\indigo\web\cuadernosindigo\managed\bean\CuadernoManagedBean.class
+ar\com\indigo\web\cuadernosindigo\repositories\rest\Service.class
+ar\com\indigo\web\cuadernosindigo\repositories\rest\CuadernoRepository$2.class
+ar\com\indigo\web\cuadernosindigo\test\TestClient.class

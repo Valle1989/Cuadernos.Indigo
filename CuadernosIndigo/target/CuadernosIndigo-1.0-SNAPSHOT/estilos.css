@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body{
+    background-color: rgb(173, 230, 225);
+    background-image: url(https://images.unsplash.com/photo-1503676593575-d732ab11be71?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1512&q=80);
+    background-repeat: no-repeat;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+  }
+
+  .colorFondo{
+     background-color:  rgb(173, 230, 225);
+  }
+
+  .imagen{
+     border-radius: 50%;
+     background-color: rgb(173, 230, 225);
+  }
+
+ h1{
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+ }
+
+
+ a{
+    text-decoration: none;
+    text-transform: uppercase;
+ }
+
+h2{
+   font-family: 'Poiret One', cursive;
+   font-size: large;
+}
+
+button {
+   font-family: 'Poiret One', cursive;
+   font-size: large;
+   color: white;
+   border: black;
+   border-radius: 4px;
+   padding: 15px; 
+   cursor: pointer; 
+}
+
+button.violeta{
+   background-color: rgb(197, 121, 204);
+}
+.violeta a.Catalogo{
+   color: white;
+}
+
+button.amarillo{
+   background-color: rgb(212, 212, 110);
+}
+.amarillo a.Diseño{
+   color: white;
+}
+button.amarillo:hover{
+   background-color:  rgb(226, 226, 70);
+}
+
+button.rosa{
+   background-color: lightpink;
+}
+
+button.verde{
+   background-color: rgb(110, 177, 146);
+   position: sticky;
+}
+
+.imagenes{
+   display: flex;
+   justify-content: space-around;
+}
+
+.planetas{
+   margin: 20px;
+}
+.BlancoyNegro{
+   margin: 20px;
+}
+.recetario{
+   margin: 20px;
+}
+.persigueSueños{
+   margin: 20px;
+}
+.cuadernoPastel{
+   margin: 20px;
+}
+.cuadernoFlores{
+   margin: 20px;
+}
+
+.colum1{
+   flex-direction: column;
+}
+.colum2{
+   flex-direction: column;
+}
+.colum3{
+   flex-direction: column;
+}
+
